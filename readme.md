@@ -1,0 +1,1 @@
+This is a basic 5-round game of Rock Paper Scissors using Javascript. The current version must be played inside the browser inpector. A UI will be added.
