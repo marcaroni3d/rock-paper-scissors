@@ -1,0 +1,260 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    margin-bottom: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+
+.user-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid #5e5e5e;
+    border-radius: 10px;
+    width: 60%;
+}
+.user-content .button {
+    padding: 40px;
+}
+.button, #computer-button{
+    height: 125px;
+    width: 125px;
+}
+.button:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+.rock-button:hover {
+    filter: invert(48%) sepia(17%) saturate(1028%) hue-rotate(215deg) brightness(93%) contrast(87%);
+}
+.paper-button:hover {
+    filter: invert(68%) sepia(19%) saturate(765%) hue-rotate(112deg) brightness(92%) contrast(86%);
+}
+.scissors-button:hover {
+    filter: invert(49%) sepia(19%) saturate(968%) hue-rotate(300deg) brightness(95%) contrast(91%);
+}
+
+
+.separator {
+    width: 50%;
+}
+
+
+.game-output {
+    display: flex;
+    transition: all 0.2s;
+    width: 60%;
+}
+.computer-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+    transition: all 0.2s;
+}
+.results-content {
+    flex: 2;
+    padding: 0 20px 20px 20px;
+}
+
+.play-again {
+    margin-top: 40px;
+}
+#play-again-button {
+    background-color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color:#5e5e5e;
+    cursor: pointer;
+}
+
+#play-again-button:hover {
+    background-color:#5e5e5e;
+    color: #ffffff;
+    transition-duration: 0.3s
+}
+
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Colors */
+.grey-color {
+    color: #5e5e5e;
+}
+.purple-color {
+    color: #806fac;
+}
+.green-color {
+    color: #62b49c;
+}
+.red-color {
+    color: #b96b78;
+}
+
+.grey-border {
+    border: 5px solid #5e5e5e;
+    border-radius: 10px;
+}
+.purple-border {
+    border: 5px solid #806fac;
+    border-radius: 10px;
+}
+.green-border {
+    border: 5px solid #62b49c;
+    border-radius: 10px;
+}
+.red-border {
+    border: 5px solid #b96b78;
+    border-radius: 10px;
+}
+
+.grey-border-right {
+    border-right: 5px solid #5e5e5e;
+}
+.purple-border-right {
+    border-right: 5px solid #806fac;
+}
+.green-border-right {
+    border-right: 5px solid #62b49c;
+}
+.red-border-right {
+    border-right: 5px solid #b96b78;
+}
+
+
+
+
+
+
+
+
+
+
+/* OLD SCRIPT
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #5e5e5e;
+    margin: 0;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    color: #5e5e5e;
+    display: flex;
+    flex-direction: column;
+}
+header > h1 {
+    margin: 10px;
+    font-size: 64px;
+}
+header > p {
+    font-size: 22px;
+}
+
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+    filter: invert(50%);
+    padding: 40px;
+}
+.icon:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.player-container {
+    display: flex;
+    justify-content:space-evenly;
+    border: 5px solid #5e5e5e;
+    border-radius: 5px;
+}
+
+.separator {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.game-output {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #5e5e5e;
+    border-radius: 5px;
+}
+
+.computer-play {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid #5e5e5e;
+}
+.computer-icon {
+    width: 100px;
+    height: 100px;
+    filter: invert(50%);
+}
+
+.game-results {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.game-end {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+*/
