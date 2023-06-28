@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>The classic test of Man vs Machine</p>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <h4>Choose Wisely</h4>
+            <div class="user-interface">
+                <input type="image" id="rock" class="button rock-button" src="images/hand-back-fist-regular.svg">
+                <input type="image" id="paper" class="button paper-button" src="images/hand-regular.svg">
+                <input type="image" id="scissors" class="button scissors-button" src="images/hand-scissors-regular.svg">
+            </div> 
+        </div>
+
+        <div class="content-wrapper">
+            <div class="output-content">
+                <div class="output-wrapper">
+                    <h4>Player Choice</h4>
+                    <img src="images/circle-question-solid.svg" id="user-choice" class="output-img">
+                </div>
+                <div class="output-wrapper">
+                    <h4>Computer Choice</h4>
+                    <img src="images/circle-question-solid.svg" id="computer-choice" class="output-img">
+                </div>
+            </div>
+            <p id="output-text">Anything could happen...</p>
+        </div>
+
+        <div class="content-wrapper data">
+            <h4>Round:</h4>
+            <h4>Your Score:</h4>
+            <h4>Computer Score:</h4>
+        </div>
+
+        <button id="play-again-button">Play Again</button>
+    </main>
+
+    <footer>
+        <p>Created by Marcaroni3d</p>
+        <a href="https://github.com/marcaroni3d" target="_blank">
+            <img class="github-img" src="images/github-mark.svg">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
