@@ -50,13 +50,13 @@ main {
     align-items: center;
 }
 .output-img,
-.button {
+.user-input {
     height: 125px;
     width: 125px;
     padding: 40px;
 }
 
-.button:hover {
+.user-input:hover {
     transform: scale(1.2);
     transition: all .3s;
 }
@@ -70,6 +70,11 @@ main {
     font-size: 18px;
     color: var(--main-grey);
     cursor: pointer;
+}
+#play-again-button:hover {
+    background-color: var(--main-grey);
+    color: #ffffff;
+    transition-duration: 0.3s
 }
 
 footer {

@@ -16,9 +16,9 @@
         <div class="content-wrapper">
             <h4>Choose Wisely</h4>
             <div class="user-interface">
-                <input type="image" id="rock" class="button rock-button" src="images/hand-back-fist-regular.svg">
-                <input type="image" id="paper" class="button paper-button" src="images/hand-regular.svg">
-                <input type="image" id="scissors" class="button scissors-button" src="images/hand-scissors-regular.svg">
+                <input type="image" id="rock" class="user-input rock-button" src="images/hand-back-fist-regular.svg">
+                <input type="image" id="paper" class="user-input paper-button" src="images/hand-regular.svg">
+                <input type="image" id="scissors" class="user-input scissors-button" src="images/hand-scissors-regular.svg">
             </div> 
         </div>
 
@@ -26,7 +26,7 @@
             <div class="output-content">
                 <div class="output-wrapper">
                     <h4>Player Choice</h4>
-                    <img src="images/circle-question-solid.svg" id="user-choice" class="output-img">
+                    <img src="images/circle-question-solid.svg" id="player-choice" class="output-img">
                 </div>
                 <div class="output-wrapper">
                     <h4>Computer Choice</h4>
@@ -37,9 +37,10 @@
         </div>
 
         <div class="content-wrapper data">
-            <h4>Round:</h4>
-            <h4>Your Score:</h4>
-            <h4>Computer Score:</h4>
+            <h4>Round:<span id="round-count">0</span></h4>
+            <h4>Your Score:<span id="player-score">0</span></h4>
+            <h4>Computer Score:<span id="computer-score">0</span></h4>
+            <h4>Draw Games:<span id="draw-games">0</span></h4>
         </div>
 
         <button id="play-again-button">Play Again</button>
