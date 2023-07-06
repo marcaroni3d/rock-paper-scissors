@@ -8,13 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Rock Paper Scissors</h1>
-        <p>The classic test of Man vs Machine</p>
+        <div class="header-box">
+            <h1>
+                <span class="red">Rock</span>
+                <span class="blue">Paper</span> 
+                <span class="gold">Scissors</span>
+            </h1>
+            <p>A classic test of Man vs Machine</p>
+        </div>
     </header>
 
     <main>
-        <div class="content-wrapper">
-            <h4>Choose Wisely</h4>
+        <div class="user-column">
+            <img src="images/man-outline.svg" class="user-img" alt="">
             <div class="user-interface">
                 <input type="image" id="rock" class="user-input rock-button" src="images/hand-back-fist-regular.svg">
                 <input type="image" id="paper" class="user-input paper-button" src="images/hand-regular.svg">
@@ -22,10 +28,13 @@
             </div> 
         </div>
 
-        <div class="content-wrapper">
+        <div class="center-column">
+
+            <p id="output-text">Anything could happen...</p>
+            
             <div class="output-content">
                 <div class="output-wrapper">
-                    <h4>Player Choice</h4>
+                    <h4>Your Choice</h4>
                     <img src="images/circle-question-solid.svg" id="player-choice" class="output-img">
                 </div>
                 <div class="output-wrapper">
@@ -33,17 +42,20 @@
                     <img src="images/circle-question-solid.svg" id="computer-choice" class="output-img">
                 </div>
             </div>
-            <p id="output-text">Anything could happen...</p>
+
+            <div class="data-content">
+                <h4>Round: <span id="round-count">0</span></h4>
+                <h4>Your Score: <span id="player-score">0</span></h4>
+                <h4>Computer Score: <span id="computer-score">0</span></h4>
+                <h4>Draw Games: <span id="draw-games">0</span></h4>
+            </div>
+
+            <button id="play-again-button">Play Again</button>
         </div>
 
-        <div class="content-wrapper data">
-            <h4>Round:<span id="round-count">0</span></h4>
-            <h4>Your Score:<span id="player-score">0</span></h4>
-            <h4>Computer Score:<span id="computer-score">0</span></h4>
-            <h4>Draw Games:<span id="draw-games">0</span></h4>
+        <div class="computer-column">
+            <img src="images/robot.svg" class="computer-img" alt="">
         </div>
-
-        <button id="play-again-button">Play Again</button>
     </main>
 
     <footer>

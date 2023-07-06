@@ -57,21 +57,21 @@ function getResults() {
         case 'scissorspaper':   // WIN
             playerScore++
             playerScoreDisplay.innerHTML = playerScore
-            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ', you win!'
+            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ', <b>you win!</b>'
             break
         case 'rockpaper':
         case 'paperscissors':
         case 'scissorsrock':    // LOSS
             computerScore++
             computerScoreDisplay.innerHTML = computerScore
-            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ', you lose...'
+            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ', <b>you lose...</b>'
             break
         case 'rockrock':
         case 'paperpaper':
         case 'scissorsscissors':    // DRAW
             drawGameCount++
             drawGameDisplay.innerHTML = drawGameCount
-            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ", it's a draw."
+            outputDisplay.innerHTML = 'You chose ' + playerChoice + ' and the computer chose ' + computerChoice + ", <b>it's a draw.</b>"
             break
     }
 
